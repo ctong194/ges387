@@ -2,7 +2,62 @@
 <html lang="en">
 
 <head>
+<style>
+    body {
+        height: 700px;
+    }
 
+    .item{
+      margin-left:-10px;
+      margin-right:-10px;
+      height:700px;
+    }
+
+    @media (min-width: 1200px) {
+      .item{
+        margin-top: 40px;
+      }
+      .carousel-caption{
+        bottom: 70px;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .item{
+        margin-top: 90px;
+      }
+      .carousel-caption{
+        bottom: 120px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px){
+      .item{
+        margin-top: 90px;
+      }
+      .carousel-caption{
+        bottom: 120px;
+      }
+    }
+
+    @media (min-width: 488px) and (max-width: 767px) {
+      .item{
+        margin-top: 40px;
+      }
+      .carousel-caption{
+        bottom: 70px;
+      }
+    }
+
+    @media (max-width: 487px){
+      .item{
+        margin-top: 90px;
+      }
+      .carousel-caption{
+        bottom: 120px;
+      }
+    }
+</style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -101,9 +156,9 @@
         <div class="carousel-inner">
             <div id="#map1" class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Map 1');"></div>
+                <iframe src="map/map1.html" height=700px width=100%></iframe>
                 <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+                    <h2>Basemap</h2>
                 </div>
             </div>
             <div id="#map2"class="item">
@@ -216,7 +271,7 @@
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
-        interval: 5000 //changes the speed
+        interval: 10000 //changes the speed
     })
     </script>
 

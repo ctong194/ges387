@@ -23,14 +23,14 @@
   #map { min-height: 100%; }
 </style>
      <title>Hexbin Map</title>
-     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css"/>
-     <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet-src.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css"/>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
 
-     <script src="http://d3js.org/d3.v3.min.js"></script>
-     <script src="http://d3js.org/d3.hexbin.v0.js"></script>
+     <script src="https://d3js.org/d3.v3.min.js"></script>
+     <script src="https://d3js.org/d3.hexbin.v0.js"></script>
 
-     <script type="text/javascript" src="http://raw.github.com/affinitybridge/d3-demos-quakes/master/js/colorbrewer.js"></script>
-     <script type="text/javascript" src="http://raw.github.com/affinitybridge/d3-demos-quakes/master/js/leaflet.hexbin-layer.js"></script>
+     <script type="text/javascript" src="https://raw.github.com/affinitybridge/d3-demos-quakes/master/js/colorbrewer.js"></script>
+     <script type="text/javascript" src="https://raw.github.com/affinitybridge/d3-demos-quakes/master/js/leaflet.hexbin-layer.js"></script>
    </head>
 
    <body> <!--Create a div container for the map without specifying height-->
@@ -55,7 +55,7 @@
  * L.hexLayer is a leaflet function for creating hexbins based on the input data
  * The hexagons will be styled based on the hex_style function that is defined in the following code snippet
  */
-d3.json("GES 387QGIS Lab 4.geojson", function(collection) {
+d3.json("GES387QGISLab4.geojson", function(collection) {
     L.hexLayer(collection, {
         applyStyle: hex_style
     }).addTo(map);

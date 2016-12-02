@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 2</title>
+        <link rel="stylesheet" href="leaflet.css" />
+        <script src="leaflet.js"></script>
+
+    </head>
+
+    <body>
+        <div id="map" style="height: 500px"></div>
+
+        <script type="text/javascript">
+          var map = L.map('map').setView([41.911239, -87.701746], 10);
+
+          L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+               attribution: '@ <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+               maxZoom: 10,
+               minZoom: 10
+            }).addTo(map);
+
+            var marker1 = L.marker([42.0022913,-87.7261429]).addTo(map);
+            var marker2 = L.marker([42.0334242,-87.7134042]).addTo(map);
+            var marker3 = L.marker([41.853502,-87.6351655]).addTo(map);
+
+            marker1.bindPopup("my favorite restaurant #1");
+            marker2.bindPopup("my favorite restaurant #2");
+            marker3.bindPopup("my favorite restaurant #3");
+        </script>
+   </body>
+</html>
